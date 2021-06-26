@@ -394,7 +394,7 @@ namespace QuestPatcher.Core.Patching
                 _logger.Warning("Failed to delete patched APK");
             }
 
-            string signedPath = Path.Combine(_specialFolders.PatchingFolder, "patched-aligned-debugSigned.apk");
+            string signedPath = Path.Combine(_specialFolders.PatchingFolder, "patched-debugSigned.apk");
             // Avoid uninstalling the APK then failing during installation. Fail here instead to preserve the vanilla game
             if (!File.Exists(signedPath))
             {
